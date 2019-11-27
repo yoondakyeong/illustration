@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>고즈넉</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,400,500,600,700,900&display=swap&subset=korean" rel="stylesheet">
+	<link href="stylesheet" rel="style.css">
+
+</head>
+
+<style type="text/css">
+
+/*모니터 스크롤 길이표시
+	#monitor{ position: fixed; 
+				background: black;
+				padding:5px; 
+				top:0; right:0; 
+				width:70px; height:20px;
+				color:white;}*/
+
+html{scroll-behavior: smooth;}
+html::-webkit-scrollbar {
+    display: none;}
+
+
+	body{margin: 0; padding:0; text-align: center; background-color: black; color: white; font-family: 'Noto Serif KR', serif; margin-right: 0; margin-left: 0; overflow-x: hidden;}
+
+	.navbar{ width: 100%; height: 30px; background-color: black; 
+			margin:0; padding: 0; top:0; z-index: 1; border-bottom: 0.5px solid dimgray; color: dimgray; font-weight: 900;}
+	#nav1{position: absolute; left: 5%; top:0%; height: 30px;}
+	#nav2{position: absolute; right: 5%; top:0%;}
+
+
+	.section-one2{height: 700px; position: relative;
+				margin-top: 100px;}
+	.section-one{height: 700px; position: relative;
+				margin-top: 250px;}
+	.section-T{height: 1500px; position: relative;
+				margin-top: 250px;}
+	.section{height: 900px; position: relative; 
+			margin-top: 250px; margin-bottom: 400px;}
+
+	
+/*이미지*/
+	#section2 #Moonimg2{width: 50%;
+						position: absolute;top:50%;
+    					left: 50%;
+    					opacity: 0.4;
+    					animation: Donda 7s infinite alternate;
+    					border-radius: 100%;}
+
+
+	#leafM{width: 300px; position: absolute; bottom: 18%; right: 0; cursor: pointer;
+		transform: rotate(180deg); opacity: 0.5;}
+
+    #Leaf3img{width: 250px; position: absolute; top: 8%; left: 48px; transform: rotate(-90deg); opacity: 0.2; cursor: pointer;}
+    #Leaf3img:hover{opacity: 0.7;}
+  
+ 
+   	#section3-img{background:url(img/water2.jpg); width: 100%; height: 900px; opacity: 0.2;}
+   	#section3WI{position: absolute; width: 100%; height: 800px; top:50%; opacity: 0.2; z-index: -9; transform: translate(-50%, -50%);
+   		animation: waterM 40s infinite;}
+
+   	#SferryImg{position: absolute;
+   				width: 25%;
+   				top:50%;
+   				opacity: .3;
+   				animation: FerryM 90s infinite;
+   				cursor: pointer;
+   				transform: translate(-50%, -50%);}
+ 
+
+/*버튼*/
+   	#Footer-B1{    position: fixed;
+    padding: 1px 7px 1px 6px;
+    font-size: 16px;
+    border-radius: 50%;
+    left: 1%;
+    bottom: 6px;
+    transition: background 0.5s;
+    background-color: black;
+    color: white;
+    border: 0px solid darkgray;
+    opacity: 0.5;
+    z-index: 1000;
+	background:none;
+	cursor: pointer;}
+
+    #Footer-B2{    position: fixed;
+    padding: 1px 7px 1px 6px;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 1%;
+    bottom: 6px;
+    transition: background 0.5s;
+    background-color: black;
+    color: white;
+    border: 0px solid darkgray;
+    opacity: 0.5;
+    z-index: 1000;
+    background:none;
+    cursor: pointer;
+}
+
+
+ 
+
+   	#section0-text{position:absolute; 
+   					top:20%; right: 50%;
+   					margin: 0; font-size: 5em;
+   					transform: translate(50%, 50%);}
+
+   	#section0-text1{position:absolute; 
+   					bottom:55%; right: 50%;
+   					margin: 0; font-size: 5em;
+   					transform: translate(50%, 50%);}
+/*아래 한순간*/ 
+	
+
+   	.Ptext1{position: absolute; left:10%; top:10%; opacity: 0; font-size: 1.3em;}
+   	.Ptext11{position: absolute; left:10%; top:10%; opacity: 0; font-size: 2em;}
+   	.Ptext2{position: absolute; right:10%; bottom: 10%; opacity: 0; font-size: 2em;}
+   	.Ptext22{position: absolute; right:10%; bottom: 10%; opacity: 0; font-size: 1.3em;}
+
+
+
+   	@keyframes downup1{from{top:20%; opacity: 0;}to{top:10%; opacity: 1;}}
+   	@keyframes downup2{from{bottom: 0; opacity: 0;}to{bottom: 10%; opacity: 1;}}
+   	@keyframes OPACI{from{ opacity: 0;}to{opacity: 1;}}
+   	@keyframes FerryM{0%{ right: 0%; opacity: 0;}
+   					20%{right: 15%; opacity: 0.6;}
+   					100%{right: 90%; opacity: 0.2;}}
+
+   	@keyframes MoonMText{from{ left:-47%;}to{left: 147%;}}
+   	@keyframes Donda{
+   		0%{transform:translate(-50%,-50%) rotate(60deg) scale(2); opacity: 1;} 
+   		100%{transform:translate(-50%,-50%) rotate(150deg) scale(1); opacity: .3;}
+   	}
+
+    @keyframes waterM {25% {top:100%;}
+						50% {top:30%;}
+						75% {top:100%;}
+						100% {top:30%;}}
+
+
+
+</style>
+
+<body>
+
+	<div class="navbar">
+		<nav id="nav1">
+			<a href="index.html" style="text-decoration: none;color: dimgray;">illustration</a>
+		</nav>
+
+		<nav id="nav2">
+			20108286072 윤다경
+		</nav>
+	</div>
+
+
+
+	<div id="section0" class="section-one2">
+		<div id="wraptext0" class="wraptext">
+			<p id="section0-text">한순간,</p>
+			 </script>
+		</div>
+	</div>
+
+
+	<div id="section1" class="section">
+		<div id="wraptext1" class="wraptext">
+			<div id="S1textA1" class="Ptext1" style="cursor:pointer;">조용하다.</div>
+				<audio src="img/airBGM.mp3" loop id="M01"></audio>
+			 <script>
+			 	S1textA1.onclick=function(t){
+			 		M01.play()
+			 		M01.volume=0.1
+			 	}
+			 </script>
+			<p id="S1textA2" class="Ptext2">어둠 속에서 말 없이 지키고 서 있다.</p>
+			<img src="img/Moun.png" id="MounImg"
+				style="position: absolute; 
+						width: 100%; 
+						top:25%;
+						left:0;
+						opacity: 0.6;
+						z-index: -5;"></div>
+		</div>
+	</div>
+
+
+	<div id="section2" class="section-T">
+		<div id="wraptext2" class="wraptext">
+				<img src="img/moon2.jpg" id="Moonimg2" class="Moonimg2Class">	
+				<img src="img/leaf3.png" id="Leaf3img">	
+			<p id="S2textA1" class="Ptext1">달빛은 바위와 나뭇가지를 비추고</p>
+			<p id="S2textA2" class="Ptext2">나뭇잎 위로 부서진다.</p>
+				<img src="img/leaf2.jpg" id="leafM">
+				<script>
+					leafM.onmouseover = function(e){
+						this.style.opacity ="0.2";
+					}
+					leafM.onmouseleave = function(e){
+						this.style.opacity ="";
+					}
+					
+				</script>
+		</div>
+	</div>
+
+	<div id="section3" class="section section3-back">
+		<div id="section3-img"></div>
+		<div id="wraptext3" class="wraptext ">
+					<p id="S3textA1" class="Ptext11">아, 실바람.</p>
+					<p id="S3textA2" class="Ptext22">호수가 살며시 몸을 떤다.</p>
+		</div>
+		<img src="img/waterAAA.png" id="section3WI">
+	</div>
+
+
+	<div id="section4" class="section">
+		<div id="wraptext4" class="wraptext">
+			<p id="S4textA1" class="Ptext1">배가 호수 한가운데로 고즈넉이 나아간다.</p>
+			<img src="img/Sferry.png" id="SferryImg">
+			<audio src="img/M2.mp3" id="M1"></audio>
+			<audio src="img/waterBGM.mp3" id="M2"></audio>
+				<script>
+					SferryImg.onclick = function(e){
+						M2.play()
+						M2. volume=0.6
+						M1. play()
+						M1. volume=0.2
+					}
+
+				</script>
+					
+			<p id="S4textA2" class="Ptext2">노는 삐걱대며, 물결을 헤친다.</p>
+		</div>
+	</div>
+
+	<div class="section-one">
+		<div id="wraptext0" class="wraptext">
+			<p id="section0-text1" class="Ptext0" >한순간,</p>
+		</div>
+	</div>
+
+
+	<footer style="height: 30px;border-top: 0.5px solid dimgray; color: dimgray;font-weight: 900; "> 
+		일러스트레이션2
+	</footer>
+
+	<div onclick="topFunction()" id="Footer-B1">Top</div>
+	<div onclick="bottomFunction()" id="Footer-B2">Bottom</div>
+	<div id="monitor"></div>
+
+
+
+
+<script type="text/javascript">
+
+//글자효과
+	window.onscroll = function(){
+			var t = document.documentElement.scrollTop + document.body.scrollTop;
+			//monitor.innerHTML = t.toFixed(1);
+
+		if(t>600){
+			S1textA1.style.animation = "downup1 2s forwards";}
+			
+		if(t>1200){
+			S1textA2.style.animation = "downup2 2s forwards";}
+			
+
+
+		if(t>2100){
+			S2textA1.style.animation = "downup1 2s forwards";}
+			
+		if(t>2900){
+			S2textA2.style.animation = "downup2 2s forwards";}
+			
+
+
+		if(t>3800){
+			S3textA1.style.animation = "downup1 2s forwards";}
+			
+		if(t>4200){
+			S3textA2.style.animation = "downup2 2s forwards";}
+			
+
+
+		if(t>5000){
+			S4textA1.style.animation = "downup1 2s forwards";}
+			
+		if(t>5500){
+			S4textA2.style.animation = "downup2 2s forwards";}
+		
+
+
+
+
+
+
+
+
+
+//이미지
+		//if(t>2900){
+			//Leafimg.style.animation = "OPACI 2s forwards";}
+			//else{Leafimg.style.animation = "";}
+
+
+
+
+	}
+	
+	
+
+
+
+
+
+//버튼 위치선정
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function bottomFunction() {
+  document.body.scrollTop = 6888;
+  document.documentElement.scrollTop = 6888;
+}
+</script>
+
+</body>
+</html>
